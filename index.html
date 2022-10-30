@@ -186,15 +186,7 @@ animation: snow 10s linear infinite;
 		   
 	   }
 	   
-	   
-	   const soundEffect = new Audio();
 
-// onClick of first interaction on page before I need the sounds
-soundEffect.play();
-
-// later on when you actually want to play a sound at any point without user interaction
-soundEffect.src = 'songs.mp3';
-soundEffect.play();
 
 	</script>
 	
@@ -256,7 +248,9 @@ quebra facilmenteâ€ Eclesiastes 4:9.</p>
 
  <audio id="musica" src="songs.mp3" preload="auto"> 
 	 
-
+<video autoplay loop muted playsinline class="video-background">
+  <source src="songs.mp4" type="video/mp4">
+</video>
 	
 	 
     <style>
