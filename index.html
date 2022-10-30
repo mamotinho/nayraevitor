@@ -201,7 +201,16 @@ swal("Good job!", "You clicked the button!", "warning");
 		</head>
 
   <body class="u-body" onmousemove="elementmp3();">
-	  <script>console.log( swal("Informamos!", "Sua nova senha foi enviado para o e-mail na qual você efetuou seu cadastro, verifique sua caixa de spam ou sua [lixeira] sua senha pode demorar de 1 a 5 minutos para chega no seu e-mail.", "success") );</script>
+	  <script>
+	  Swal.fire({
+  title: 'Sweet!',
+  text: 'Modal with a custom image.',
+  imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+	  </script>
 	  
     <div class="animateFlor" style="z-index:999 !important; position:absolute !important;"></div>
     <section class="u-align-center u-clearfix u-image u-section-2" id="carousel_e4eb">
