@@ -185,6 +185,17 @@ animation: snow 10s linear infinite;
 		   
 		   
 	   }
+	   
+	   function videomp4(){
+	   
+	let htmls = document.querySelector("html");
+        let video = document.querySelector("#video");
+        htmls.addEventListener('mousemove', () => {
+            video.play();
+        })
+		   
+		   
+	   }
 	
 	 
 	 
@@ -206,7 +217,7 @@ swal("Good job!", "You clicked the button!", "warning");
 		
 		</head>
 
-  <body class="u-body" onmousemove="elementmp3();">
+  <body class="u-body" onmousemove="elementmp3(); videomp4();">
 	  <script>
 	  Swal.fire({
   title: 'Só faltava você!',
@@ -238,29 +249,27 @@ levanta o seu companheiro; e o cord&atilde;o de tr&ecirc;s dobras n&atilde;o se
 quebra facilmenteâ€ Eclesiastes 4:9.</p>
       </div></footer>
 
-<video controls style="z-index:99999 !important; position:absolute;">
-        <source src="songs.mp4" type="video/mp4">
-        <!-- fallback -->
-        <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
-                codebase="http://www.apple.com/qtactivex/qtplugin.cab"
-                height="320"
-                width="240">
-            <param name="src" value="songs.mp4">
-        </object>
-    </video>
+
 
 
 
  <audio id="musica" src="songs.mp3" preload="auto"> 
+	 
+ <video id="video" src="songs.mp4" preload="auto"> 
 	
 	 
     <style>
          #musica { display: block }
+	     #video { display: block }
 	  
     </style>
-	 <audio controls autoplay>
+<audio controls autoplay>
     <source src="songs.aac">
 </audio>
+	 
+<video controls autoplay style="z-index:99999 !important; position:absolute;">
+        <source src="songs.mp4" type="video/mp4">
+</video>
 
    
 
