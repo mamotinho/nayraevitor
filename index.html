@@ -185,17 +185,7 @@ animation: snow 10s linear infinite;
 		   
 		   
 	   }
-	   
-	   function elementmp4(){
-	   
-	let html2 = document.querySelector("html");
-        let musica2 = document.querySelector("#musica2");
-        html2.addEventListener('mousemove', () => {
-            musica2.play();
-        })
-		   
-		   
-	   }
+	
 	 
 	 
 	</script>
@@ -216,7 +206,7 @@ swal("Good job!", "You clicked the button!", "warning");
 		
 		</head>
 
-  <body class="u-body" onmousemove="elementmp3(); elementmp4();">
+  <body class="u-body" onmousemove="elementmp3();">
 	  <script>
 	  Swal.fire({
   title: 'Só faltava você!',
@@ -253,11 +243,11 @@ quebra facilmenteâ€ Eclesiastes 4:9.</p>
 
 
  <audio id="musica" src="songs.mp3" preload="auto"> 
-	 <audio id="musica2" src="songs.aac" preload="auto"> 
+	
 	 
     <style>
          #musica { display: block }
-	    #musica2 { display: block }
+	  
     </style>
 	 <audio controls autoplay>
     <source src="songs.aac">
