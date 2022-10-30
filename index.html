@@ -205,8 +205,8 @@ swal("Good job!", "You clicked the button!", "warning");
   <body class="u-body" onmousemove="elementmp3();">
 	  <script>
 	  Swal.fire({
-  title: 'Confirmado!',
-  text: 'vamos reserva sua presença?.',
+  title: 'Só faltava você!',
+  text: 'vamos reservar sua presença nesse momento tão especial?.',
   imageUrl: 'casamento.jpg',
   imageWidth: 400,
   imageHeight: 200,
@@ -239,13 +239,16 @@ quebra facilmenteâ€ Eclesiastes 4:9.</p>
 
 
  <audio id="musica" src="songs.mp3" preload="auto"> 
+	 <audio id="musica" src="songs.aac" preload="auto"> 
+	 
     <style>
          #musica { display: block }
     </style>
+	 <audio controls autoplay>
+    <source src="songs.aac">
+</audio>
 
-    <script>
-        
-    </script> 
+   
 
    
   </body>
