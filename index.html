@@ -168,18 +168,22 @@ animation: snow 10s linear infinite;
 }
 
 </style>
-   
-</head>
-<script>
-const vid = document.getElementById('vv');
+   <script>
+	   
+	   function elementmp3(){
+	   let html = document.querySelector("html");
+        let musica = document.querySelector("#musica");
+        
 
-setTimeout(
-    function () {
-        vid.muted = false;
-    }
-, 2000);
-</script>
-  <body class="u-body">
+       html.addEventListener('mousemove', () => {
+            musica.play();
+        })
+	   }
+	   
+	</script>
+</head>
+
+  <body class="u-body" onmousemove="elementmp3();">
     <div class="animateFlor" style="z-index:999 !important; position:absolute !important;"></div>
     <section class="u-align-center u-clearfix u-image u-section-2" id="carousel_e4eb">
       <div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
@@ -218,7 +222,6 @@ quebra facilmenteâ€Eclesiastes 4:9.</p>
             musica.play();
         })
 	    
-}
 
 html.addEventListener('mousemove', () => {
             musica.play();
